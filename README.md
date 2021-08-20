@@ -2,6 +2,8 @@
 
 > absence of mental stress or axiety, a state of serene calmness
 
+![screenshot](./screenshot.png)
+
 ## Installation
 
 If you're using one of these plugin managers:
