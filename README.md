@@ -1,6 +1,6 @@
 # ataraxis.lua
 
-> A _(no-bullshit)_ zen mode for improving code readability on neovim
+> absence of mental stress or axiety, a state of serene calmness
 
 ## Installation
 
