@@ -13,15 +13,15 @@ If you're using one of these plugin managers:
 - [`dein.vim`](https://github.com/Shougo/dein.vim)
 - [`minipac`](https://github.com/k-takata/minpac)
 
-The installation method is pretty much the same for all of them, simply initialize the plugin manager and include `henriquehbr/nvim-startup.lua` on the list
+The installation method is pretty much the same for all of them, simply initialize the plugin manager and include `henriquehbr/ataraxis.lua` on the list
 
 Otherwise, if you're using [`pathogen`](https://github.com/tpope/vim-pathogen), simply clone it on your `~/.vim/bundle` directory:
 
 ```
-$ git clone --depth 1 https://github.com/henriquehbr/nvim-startup.lua
+$ git clone --depth 1 https://github.com/henriquehbr/ataraxis.lua
 ```
 
-> `nvim-startup` is intended to be immediately executed on (n)vim startup, so if your plugin manager has some sort of `opt` funcionality that marks it as a optional plugin, avoid it!
+> `ataraxis` is intended to be immediately executed on (n)vim startup, so if your plugin manager has some sort of `opt` funcionality that marks it as a optional plugin, avoid it!
 
 ## Usage
 
@@ -30,13 +30,13 @@ To get it up and running, first, `require` it on your config:
 lua:
 
 ```lua
-require 'nvim-startup'.setup()
+require 'ataraxis'.setup()
 ```
 
 vimscript:
 
 ```vimscript
-lua require 'nvim-startup'.setup()
+lua require 'ataraxis'.setup()
 ```
 
 ## Configuration
@@ -44,7 +44,7 @@ lua require 'nvim-startup'.setup()
 The example below represents all the possible settings with their respective types and default values
 
 ```lua
-require 'nvim-startup'.setup {
+require 'ataraxis'.setup {
     width = 80 -- sets the writing area width
 }
 ```
@@ -60,7 +60,7 @@ The following tools are needed in order to properly setup the development workfl
 
 ### Steps
 
-If you're willing to contribute to `nvim-startup`, it's highly recommended to follow the steps below (for organization purposes)
+If you're willing to contribute to `ataraxis`, it's highly recommended to follow the steps below (for organization purposes)
 
 1. Fork the repo
 2. Open a new branch following one of the following naming patterns
