@@ -48,3 +48,30 @@ require 'nvim-startup'.setup {
     width = 80 -- sets the writing area width
 }
 ```
+
+## Contribution guidelines
+
+### Requirements
+
+The following tools are needed in order to properly setup the development workflow:
+
+- `make`
+- [`luarocks`](https://github.com/luarocks/luarocks)
+
+### Steps
+
+If you're willing to contribute to `nvim-startup`, it's highly recommended to follow the steps below (for organization purposes)
+
+1. Fork the repo
+2. Open a new branch following one of the following naming patterns
+    - `feat/<branch_name>` for features
+    - `fix/<branch_name>` for bugfixes
+    - `chore/<branch_name>` for small changes that doesn't fit the ones above
+3. Run `make init` to setup the `pre-commit` Git hook and install `luacheck` (for automated linting)
+4. All commits should also follow a similar naming pattern as the branches, examples below:
+    - `feat: <commit_message>` for features
+    - `fix: <commit_message>` for bugfixes
+    - `chore: <commit_message>` for small changes that doesn't fit the ones above
+5. Submit your PR! (preferably a small one and concise one, for a faster code review)
+
+> Pull requests that stricly follow the recommendations above will have higher priority in contrast of those who don't
