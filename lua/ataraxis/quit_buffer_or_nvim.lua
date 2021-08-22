@@ -1,4 +1,4 @@
-local get_listed_buffers = require 'helpers.get_listed_buffers'
+local get_listed_buffers = require 'ataraxis.get_listed_buffers'
 
 function _G.quit_buffer_or_nvim(opts)
     local options = opts or { force = false }
