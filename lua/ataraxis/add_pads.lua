@@ -1,8 +1,10 @@
+local options = require 'ataraxis.options'
 local set_pad_width = require 'ataraxis.set_pad_width'
 local set_pad_options = require 'ataraxis.set_pad_options'
 
 local function add_pads()
     if vim.o.splitright then vim.o.splitright = false end
+    if vim.o.columns < options.get().width then return end
 
     vim.cmd('vnew leftbuffer')
     set_pad_width()
