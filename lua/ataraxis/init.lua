@@ -9,10 +9,6 @@ function M.setup(custom_options)
 
     options.set(user_options)
 
-    -- replace window names on status bar with "─"
-    vim.o.statusline = ' '
-    vim.o.fillchars = 'stlnc: '
-
     add_pads()
     autocommands()
 end

@@ -4,6 +4,8 @@ local function set_pad_options()
     vim.wo.cursorline = false
     vim.bo.buflisted = false
     vim.bo.modifiable = false
+    vim.wo.statusline = ' '
+    vim.wo.fillchars = 'stlnc: '
 end
 
 return set_pad_options
