@@ -41,6 +41,8 @@ vimscript:
 lua require 'ataraxis'.setup()
 ```
 
+> It's strongly recommended to initialize `ataraxis` before any other plugin, in order to avoid windows created by other plugins to break the layout
+
 ## Configuration
 
 The example below represents all the possible settings with their respective types and default values
