@@ -6,7 +6,7 @@
 
 ## Installation
 
-> This plugins depends on [`henriquehbr/lua-helpers`](https://github.com/henriquehbr/lua-helpers) to work, remember to install it as well following the exact same instructions below
+> This plugin depends on [`henriquehbr/lua-helpers`](https://github.com/henriquehbr/lua-helpers) to work, remember to install it as well following the exact same instructions below
 
 If you're using one of these plugin managers:
 
