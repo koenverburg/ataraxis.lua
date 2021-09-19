@@ -1,4 +1,4 @@
-local get_listed_buffers = require 'helpers.nvim_get_listed_buffers'
+local get_buffers = require 'helpers.nvim_get_buffers'
 
 function _G.quit_buffer_or_nvim(opts)
     local options = opts or { force = false }
@@ -8,7 +8,7 @@ function _G.quit_buffer_or_nvim(opts)
     if opened_windows > 3 then
         -- close only split
         vim.cmd(options.force and 'q!' or 'q')
-    elseif #get_listed_buffers() < 2 then
+    elseif #get_buffers('buflisted(v:val)') < 2 then
         -- close last remaining buffer (alongside pads)
         vim.cmd(options.force and 'qa!' or 'qa')
     else
