@@ -2,12 +2,16 @@ local options = require 'ataraxis.options'
 local set_pad_width = require 'ataraxis.set_pad_width'
 local set_pad_options = require 'ataraxis.set_pad_options'
 local get_buffers = require 'helpers.nvim_get_buffers'
+local has_element = require 'helpers.has_element'
 
 local function add_pads()
+    local buffers = get_buffers()
     local window_too_narrow = vim.o.columns < options.get().width
-    local pads_exist = get_buffers() == "leftbuffer rightbuffer"
+    local left_pad_exists = has_element(buffers, 'leftbuffer')
+    local right_pad_exists = has_element(buffers, 'rightbuffer')
+    local pads_exists = left_pad_exists or right_pad_exists
 
-    if window_too_narrow or pads_exist then return end
+    if window_too_narrow or pads_exists then return end
 
     if vim.o.splitright then vim.o.splitright = false end
 
