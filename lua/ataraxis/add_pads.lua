@@ -15,6 +15,8 @@ local function add_pads()
 
     if vim.o.splitright then vim.o.splitright = false end
 
+    vim.o.eventignore = "BufEnter"
+
     vim.cmd('vnew leftbuffer')
     set_pad_width()
     set_pad_options()
@@ -26,6 +28,8 @@ local function add_pads()
     set_pad_width()
     set_pad_options()
     vim.cmd('wincmd h')
+
+    vim.o.eventignore = ""
 end
 
 return add_pads
