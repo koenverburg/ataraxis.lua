@@ -8,12 +8,13 @@ function _G.quit_buffer_or_nvim(opts)
 
     if opened_windows > 3 then
         -- close only split
-        vim.cmd(options.force and 'q!' or 'q')
+        vim.cmd(options.force and 'quit!' or 'quit')
     elseif visible_buffers < 2 then
         -- close last remaining buffer (alongside pads)
-        vim.cmd(options.force and 'qa!' or 'qa')
+        vim.cmd(options.force and 'quitall!' or 'quitall')
     else
         -- close only the current buffer (keep pads)
-        vim.cmd(options.force and 'bprev | bd#!' or 'bprev | bd#')
+        vim.cmd('bprevious')
+        vim.cmd(options.force and 'bdelete#!' or 'bdelete#')
     end
 end
