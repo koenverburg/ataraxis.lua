@@ -1,15 +1,13 @@
-function _G.quit_buffer_or_nvim(opts)
-    local options = opts or { force = false }
-
+function _G.quit_buffer_or_nvim()
     local opened_windows = vim.fn.winnr('$')
     local current_buffer_name = vim.fn.bufname('%')
 
     if opened_windows > 3 then
         -- close only split
-        vim.cmd(options.force and 'quit!' or 'quit')
+        vim.cmd('quit')
     elseif opened_windows < 3 then
         -- close last remaining buffer (alongside pads)
-        vim.cmd(options.force and 'quitall!' or 'quitall')
+        vim.cmd('quitall')
     elseif current_buffer_name == 'leftbuffer' then
         -- prevent focusing on left pad
         vim.cmd('wincmd l')
@@ -19,6 +17,6 @@ function _G.quit_buffer_or_nvim(opts)
     else
         -- close only the current buffer (keep pads)
         vim.cmd('bprevious')
-        vim.cmd(options.force and 'bdelete#!' or 'bdelete#')
+        vim.cmd('bdelete#')
     end
 end
