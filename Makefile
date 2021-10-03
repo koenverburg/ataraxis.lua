@@ -1,12 +1,12 @@
 # allows running lua modules directly
 export PATH := lua_modules/bin:$(PATH)
 
-init: hooks install
+init: setup-git-hooks install-lua-deps
 
-hooks:
+setup-git-hooks:
 	git config core.hooksPath .githooks
 
-install:
+install-lua-deps:
 	luarocks --tree=lua_modules install --only-deps ataraxis-dev-1.rockspec
 
 lint:
