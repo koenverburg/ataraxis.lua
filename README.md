@@ -75,7 +75,7 @@ If you're willing to contribute to `ataraxis`, it's highly recommended to follow
     - `feat/<branch_name>` for features
     - `fix/<branch_name>` for bugfixes
     - `chore/<branch_name>` for small changes that doesn't fit the ones above
-3. Run `make init` to setup both `pre-commit` and `commit-msg` Git hooks and install `luacheck` alongside `stylua` (for linting and code styling, respectively)
+3. Run `make init` to setup the development environment
 4. All commits must follow a similar naming pattern as the branches (which will be enforced by `commitlint`), examples below:
     - `feat: <commit_message>` for features
     - `fix: <commit_message>` for bugfixes
