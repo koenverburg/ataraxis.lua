@@ -1,5 +1,5 @@
-require 'ataraxis.quit_buffer_or_nvim'
-require 'ataraxis.adjust_pads'
+require "ataraxis.quit_buffer_or_nvim"
+require "ataraxis.adjust_pads"
 
 -- prevent focusing on pads and adjust their width when vim resizes
 vim.cmd [[
