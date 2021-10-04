@@ -18,5 +18,7 @@ install-rust-deps:
 stylua:
 	stylua lua/ataraxis
 
-lint:
+luacheck:
 	luacheck --config .luacheckrc ./lua/**/*.lua
+
+lint: stylua luacheck
