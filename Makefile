@@ -4,7 +4,7 @@ export PATH := lua_modules/bin:$(PATH)
 # allows running rust crates directly
 export PATH := rust_modules/bin:$(PATH)
 
-init: setup-git-hooks install-lua-deps install-rust-deps
+init: setup-git-hooks install-lua-deps install-rust-deps install-node-deps
 
 setup-git-hooks:
 	git config core.hooksPath .githooks
@@ -14,6 +14,9 @@ install-lua-deps:
 
 install-rust-deps:
 	cargo install stylua --root rust_modules
+
+install-node-deps:
+	npm i
 
 stylua:
 	stylua lua/ataraxis
