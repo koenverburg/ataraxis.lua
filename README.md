@@ -64,6 +64,7 @@ The following tools are needed in order to properly setup the development workfl
 - `make`
 - [`luarocks`](https://github.com/luarocks/luarocks)
 - [`rustup`](https://github.com/rust-lang/rustup)
+- [`nodejs`](https://github.com/nodejs/node)
 
 ### Steps
 
@@ -75,7 +76,7 @@ If you're willing to contribute to `ataraxis`, it's highly recommended to follow
     - `fix/<branch_name>` for bugfixes
     - `chore/<branch_name>` for small changes that doesn't fit the ones above
 3. Run `make init` to setup the `pre-commit` Git hook and install both `luacheck` and `stylua` (for linting and code styling, respectively)
-4. All commits should also follow a similar naming pattern as the branches, examples below:
+4. All commits must follow a similar naming pattern as the branches (which will be verified by `commitlint`) examples below:
     - `feat: <commit_message>` for features
     - `fix: <commit_message>` for bugfixes
     - `chore: <commit_message>` for small changes that doesn't fit the ones above
