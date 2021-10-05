@@ -4,6 +4,15 @@
 
 ![screenshot](./screenshot.png)
 
+## Summary
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Contribution guidelines](#contribution-guidelines)
+    - [Requirements](#requirements)
+    - [Steps](#steps)
+
 ## Installation
 
 > This plugin depends on [`henriquehbr/lua-helpers`](https://github.com/henriquehbr/lua-helpers) to work, remember to install it as well following the exact same instructions below
