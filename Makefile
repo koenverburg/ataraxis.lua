@@ -14,6 +14,7 @@ install-lua-deps:
 
 install-rust-deps:
 	cargo install stylua --root rust_modules
+	cargo install selene --root rust_modules
 
 install-node-deps:
 	npm i
