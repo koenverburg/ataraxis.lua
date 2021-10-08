@@ -27,4 +27,7 @@ stylua:
 luacheck:
 	luacheck --config .luacheckrc ./lua/**/*.lua
 
-lint: stylua luacheck
+selene:
+	selene lua/ataraxis
+
+lint: stylua luacheck selene
