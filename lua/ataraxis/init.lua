@@ -1,19 +1,12 @@
 require "ataraxis.autocommands"
 
+local options = require "ataraxis.options"
 local add_pads = require "ataraxis.add_pads"
 
 local M = {}
 
-_G.ataraxis = {}
-
-local default_options = {
-    width = 80,
-}
-
 function M.setup(user_options)
-    local options = user_options or {}
-    _G.ataraxis.options = vim.tbl_deep_extend("force", options, default_options)
-
+    options.set(user_options)
     add_pads()
 end
 

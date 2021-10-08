@@ -1,4 +1,4 @@
-function _G.quit_buffer_or_nvim()
+local function quit_buffer_or_nvim()
     local opened_windows = vim.fn.winnr "$"
     local current_buffer_name = vim.fn.bufname "%"
 
@@ -20,3 +20,5 @@ function _G.quit_buffer_or_nvim()
         vim.cmd "bdelete#"
     end
 end
+
+return quit_buffer_or_nvim
