@@ -34,4 +34,6 @@ luaformatter:
 selene:
 	selene lua/ataraxis
 
-lint: stylua luacheck luaformatter selene
+lint: luacheck selene
+
+style: stylua luaformatter
