@@ -10,8 +10,8 @@ setup-git-hooks:
 	git config core.hooksPath .githooks
 
 install-lua-deps:
-	luarocks --tree=lua_modules install luacheck
-	luarocks --tree=lua_modules --server=https://luarocks.org/dev install luaformatter
+	luarocks --tree lua_modules install luacheck
+	luarocks --tree lua_modules --server https://luarocks.org/dev install luaformatter
 
 install-rust-deps:
 	cargo install stylua --root rust_modules
