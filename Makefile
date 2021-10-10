@@ -29,7 +29,7 @@ luacheck:
 	luacheck --config .luacheckrc ./lua/**/*.lua
 
 luaformatter:
-	lua-format -c lua-format.yaml -i lua/ataraxis/*.lua
+	lua-format -i lua/ataraxis/*.lua
 
 selene:
 	selene lua/ataraxis
