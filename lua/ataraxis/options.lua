@@ -1,8 +1,6 @@
 local M = {}
 
-local default_options = {
-    width = 80
-}
+local default_options = {width = 80}
 
 local options = {}
 
