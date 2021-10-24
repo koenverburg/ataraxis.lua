@@ -1,4 +1,0 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-docker run -v $(dirname $(npm root)):/ataraxis henriquehbr/lua-lint-tools && git add lua/ataraxis/.

@@ -1,11 +1,5 @@
 {
-    "scripts": {
-        "get-docker-img": "docker pull henriquehbr/lua-lint-tools",
-        "prepare": "npm run get-docker-img && husky install"
-    },
     "devDependencies": {
-        "@commitlint/cli": "^13.2.0",
-        "@commitlint/config-conventional": "^13.2.0",
-        "husky": "^7.0.2"
+        "@commitlint/config-conventional": "^13.2.0"
     }
 }
